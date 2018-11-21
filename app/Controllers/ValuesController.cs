@@ -36,6 +36,7 @@ namespace making_unit_tests.Controllers
 		[HttpPost]
 		public void Post([FromBody] string value)
 		{
+			_EntityRepository.DoSomethingWithAValue(value);
 		}
 
 		// PUT api/values/5
