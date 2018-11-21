@@ -11,5 +11,10 @@ namespace making_unit_tests.Repositories
 		{
 			throw new NotImplementedException();
 		}
+
+		public Task DoSomethingWithAValue(string someUsefulParameter)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

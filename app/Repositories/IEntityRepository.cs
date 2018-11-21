@@ -8,5 +8,7 @@ namespace making_unit_tests.Repositories
 	public interface IEntityRepository
 	{
 		Task DoSomething();
+
+		Task DoSomethingWithAValue(string someUsefulParameter);
 	}
 }
