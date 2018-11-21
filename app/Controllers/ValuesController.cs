@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using making_unit_tests.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace making_unit_tests.Controllers
@@ -10,6 +11,13 @@ namespace making_unit_tests.Controllers
 	[ApiController]
 	public class ValuesController : ControllerBase
 	{
+		private readonly IEntityRepository _EntityRepository;
+
+		public ValuesController(IEntityRepository entityRepository)
+		{
+			_EntityRepository = entityRepository;
+		}
+
 		// GET api/values
 		[HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
