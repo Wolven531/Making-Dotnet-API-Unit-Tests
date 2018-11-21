@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/making-unit-tests/v15
+/.vs/slnx.sqlite
+/.vs/config
+/app/bin
+/app/obj
+/tests/obj
+/tests/bin
+/.vs/VSWorkspaceState.json
